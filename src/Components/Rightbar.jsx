@@ -31,14 +31,6 @@ const Rightbar = () => {
       img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
       title: "Coffee",
     },
-    {
-      img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-      title: "Hats",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-      title: "Honey",
-    },
   ];
   return (
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
@@ -46,7 +38,7 @@ const Rightbar = () => {
         <Typography variant="h6" fontWeight={100}>
           Online Friends
         </Typography>
-        <AvatarGroup max={5}>
+        <AvatarGroup sx={{justifyContent:"flex-end"}} max={5}>
           <Avatar
             alt="Mahmoud Mostafa"
             src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
@@ -127,28 +119,6 @@ const Rightbar = () => {
                     to Scott, Alex, Jennifer
                   </Typography>
                   {" — Wish I could come, but I'm out of town this…"}
-                </React.Fragment>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Oui Oui"
-              secondary={
-                <React.Fragment>
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    Sandra Adams
-                  </Typography>
-                  {" — Do you have Paris recommendations? Have you ever…"}
                 </React.Fragment>
               }
             />
